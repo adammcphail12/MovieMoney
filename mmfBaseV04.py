@@ -24,14 +24,14 @@ def num_check(question, error):
              print(error)
 
 # string check
-def string_check(question, valid1 , valid2, valid3, valid4, error):
+def string_check(question, valid_1 , valid_2, valid_3, valid_4, error):
     
     while True:
         user = input(question).lower()
-        if user == valid1 or user == valid2:
-            return valid1
-        elif user == valid3 or user == valid4:
-            return valid3
+        if user == valid_1 or user == valid_2:
+            return valid_1
+        elif user == valid_3 or user == valid_4:
+            return valid_3
         else:
             print(error)
     
