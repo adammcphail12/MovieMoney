@@ -92,9 +92,9 @@ while MAX_TICKET > tickets_sold :
         # this  adds the customer to the list of customers.
         customers.append(name)
         
-paymentMethod = string_check('Would you like to pay with Cash or Credit? ','cash', 'ca','credit', 'cr','Sorry That is not a valid input. Valid inputs include Cash or Credit')
+payment_method = string_check('Would you like to pay with Cash or Credit? ','cash', 'ca','credit', 'cr','Sorry That is not a valid input. Valid inputs include Cash or Credit')
 
-print('Ok {} sounds good.'.format(paymentMethod))
+print('Ok {} sounds good.'.format(payment_method))
 print('\nTickets sold tonight: {} '.format(tickets_sold))
 print('Tickets Remaining: {}'.format(MAX_TICKET - tickets_sold))
 print('Attendance at tonights showing: {}'.format(customers))
