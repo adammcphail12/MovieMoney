@@ -7,6 +7,10 @@ surcharge = [0,0,0.53,0.53,0]
 
 
 mini_movie_dict = {
-    "Name" = all_names,
-    'Ticket Price' = 
+    'Name' : all_names,
+    'Ticket Price' : all_tickets_costs,
+    'Surcharge' : surcharge
 }
+
+mini_movie_frame = pandas.DataFrame(mini_movie_dict)
+print(mini_movie_frame)
