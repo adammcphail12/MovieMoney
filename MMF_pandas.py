@@ -19,4 +19,13 @@ mini_movie_frame['Total'] = (mini_movie_frame['Surcharge'] +
 mini_movie_frame['Ticket Price'])
 
 
+mini_movie_frame['Profit'] = (mini_movie_frame['Ticket Price'] - 5)
+
+total = mini_movie_frame['Total'].sum()
+profit = mini_movie_frame['Profit'].sum()
+
+
 print(mini_movie_frame)
+
+print('Total ticket sales : ${}'.format(total))
+print('Total Profit : ${}'.format(profit))
